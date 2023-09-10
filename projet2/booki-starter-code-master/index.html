@@ -18,13 +18,54 @@
 <body>
     <div class="main-container">
         <header>
-            <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <h2>En plein centre-ville ou en pleine nature</h2>
-                <i></i>
+            <div id="logo">
+                <img src="./images/logo/Booki@3x.png">
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activite">Activités</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <span class="subtitle">En plein centre ville ou en pleine nature</span>
+            <div class="search-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" placeholder="Marseille, France">
+                <button>
+                <span><b>Rechercher</b></span>
+                </button>
+            </div>
+            <section id="filter">
+                <h2>Filtres</h2>
+                <span class="filtre-box">
+                <i class="fas fa-money-bill-wave"></i>
+                <span class="text">
+                    Économique
+                </span>
+                </span>
+                <span class="filtre-box">
+                <i class="fas fa-child"></i>
+                <span class="text">
+                    Familial
+                </span>
+                </span>
+                <span class="filtre-box">
+                <i class="fas fa-heart"></i>
+                <span class="text">
+                    Romantique
+                </span>
+                </span>
+                <span class="filtre-box">
+                <i class="fas fa-fire"></i>
+                <span class="text">
+                    Nos pépites
+                </span>
+                </span>
+            </section>
+            <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                         <div class="hebergements-title">
@@ -134,6 +175,7 @@
                                     </div>
                                 </article>
                             </div>
+                            <div><b>Afficher plus</b></div>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -235,26 +277,36 @@
             </div>
         </main>
         <footer>
-            <div>
                 <div class="footer">
-                    <div class="footer-title">
-                        <h2>À propos</h2>
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            <h2>À propos</h2>
+                        </div>
+                        <ul class="footer-list">
+                            <li>Fonctionnement du site</li>
+                            <li>Conditions générales</li>
+                            <li>Données et confidentialité</li>
+                        </ul>
                     </div>
-                            <p>Fonctionnement du site</p>
-                            <p>Conditions générales</p>
-                            <p>Données et confidentialité</p>
-                    <div class="footer-title">        
-                        <h2>Nos hébergements</h2>
+                    <div class="footer-block">        
+                        <div class="footer-title">
+                            <h2>Nos hébergements</h2>
+                        </div>
+                        <ul class="footer-list">
+                            <li>Charte qualité</li>
+                            <li>Porposer votre hôtel</li>
+                        </ul>
                     </div>
-                            <p>Charte qualité</p>
-                            <p>Porposer votre hôtel</p>
-                    <div class="footer-title">
-                        <h2>Assistance</h2>
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            <h2>Assistance</h2>
+                        </div>
+                        <ul class="footer-list">
+                            <li>Centre d'aide</li>
+                            <li>Nous contacter</li>
+                        </ul>
                     </div>
-                            <p>Centre d'aide</p>
-                            <p>Nous contacter</p>
                 </div>    
-            </div>
         </footer>
     </div>
 </body>

@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .main-container {
@@ -69,28 +70,29 @@ header #logo img {
     width: 150px;
 }
 
-header nav ul {
+header nav .menu {
     display: flex;
-    list-style-type: none;
-    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250px;
 }
 
-header nav ul li {
-    padding: 20px 20px;
+header nav .menuitem{
     border-top: 4px solid transparent;
-    margin: 0px 20px 0px 20px;
+    padding-top: 10px;
 }
 
-header nav ul li:hover {
+header nav .menuitem:hover {
     border-color: #0065FC;
 }
 
-header nav ul li a {
+header nav .menuitem a {
     color: black;
     text-decoration: none;
 }
 
-header nav ul li:hover a {
+header nav .menuitem:hover a {
     color: #0065FC;
 }
 
@@ -112,7 +114,6 @@ h1 {
     width:310px;
     height:45px;
     margin-bottom: 30px;
-    display: flex;
     flex-direction: row;
 }
 

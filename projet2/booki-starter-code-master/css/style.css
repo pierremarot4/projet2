@@ -102,7 +102,7 @@ h1 {
 }
 
 .subtitle {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -118,7 +118,7 @@ h1 {
 }
 
 .search-box .fa-map-marker-alt {
-    display: inline-block;
+    display: flex;
     padding: 10px;
     font-size: 25px;
     background-color: #F2F2F2;
@@ -173,10 +173,9 @@ h1 {
 #filter .filtre-box i {
     height: 50px;
     width: 50px;
-    display: inline-block;
+    display: flex;
     border-radius: 100%;
     color: #0065FC;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -396,7 +395,6 @@ h1 {
     }
 
     .populaires-cards {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -501,7 +499,7 @@ h1 {
     }
 
     .search-icon {
-        display: block !important;
+        display: flex !important;
         color: white;
         font-size: 18px;
     }
@@ -580,18 +578,11 @@ h1 {
         margin-bottom: 40px;
     }
     
-    .activites-title {
-        display: flex;
-    }
-    
     .activites-cards {
-        display: flex;
         flex-direction: column;
-        justify-content: space-between;
     }
     
     .activites-cards .card {
-        display: flex;
         margin-top: 33px;
         flex-direction: column;
         width: 100%;
@@ -608,14 +599,12 @@ h1 {
     
     .activites-cards .card-content {
         padding-left: 15px;
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .footer {
         width: 100%;
-        display: flex;
         flex-direction: column;
         background-color: #EFEFEF;
         padding-left: 15px;
@@ -626,7 +615,6 @@ h1 {
     }
     
     .footer-block {
-        display: flex;
         width: 100%;
         flex-direction: column;
     }

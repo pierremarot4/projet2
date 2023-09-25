@@ -436,7 +436,7 @@ h1 {
     }
 
     .main-container {
-        padding: 15px;
+        padding: 0px;
     }
 
     header #logo {
@@ -616,10 +616,9 @@ h1 {
     }
 
     .footer {
-        width: 200%;
+        width: 100%;
         flex-direction: column;
         background-color: #EFEFEF;
-        margin: -15px;
     }
     
     .footer-title {

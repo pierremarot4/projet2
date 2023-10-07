@@ -70,7 +70,7 @@ header #logo img {
     width: 150px;
 }
 
-header nav .menu {
+header nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -448,12 +448,16 @@ h1 {
         width: 80px;
     }
     
+    header nav {
+        width : 100%;   
+    }
+
     header nav .menuitem{
         border-top: 0px solid transparent;
         border-bottom: 2px solid transparent;
         width: 50%;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         padding-bottom: 10px;
     }
     
@@ -473,31 +477,37 @@ h1 {
     h1 {
         font-size: 20px;
         margin-top: 20px;
+        margin-left: 15px;
     }
 
     .subtitle {
         margin-top: 8px;
         margin-bottom: 35px;
         font-size: 14px;
+        margin-left: 15px;
     }
 
     .search-box {
-        width: 100%;
+        width: auto;
         margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        justify-content: space-between;
     }
 
     .search-box .fa-map-marker-alt {
-        width: 10%;
+        width: auto;
     }
 
     .search-box input {
-        width: 80%;
+        width: auto;
     }
 
     .search-box button {
-        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
         border-radius: 15px;
-        width: 17%;
+        width: auto;
+        margin: 0px;
     }
 
     .search-text {
@@ -519,14 +529,15 @@ h1 {
         width: 100%;
         margin-bottom: 0px;
         font-size: 20px;
+        margin-left: 15px;
     }
     
     #filter .filtre-box {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     #filter .filtre-box .text {
-        padding : 0px;
+        padding : 0px 0px 0px 5px;
     }
 
     #filter .filtre-box i {
@@ -535,7 +546,13 @@ h1 {
     }
 
     .filtre-box {
-        width: 115px;
+        width: 45%;
+        margin: 0px !important;
+    }
+
+    .info {
+        margin-left: 15px;
+        font-size: 13px;
     }
 
     .hebergements-and-populaires {
@@ -549,6 +566,7 @@ h1 {
     .hebergements {
         width: 100%;
         margin-top: 30px;
+        background : none !important;
     }
 
     .hebergements-cards {
@@ -559,11 +577,30 @@ h1 {
     
     .hebergements-cards .card {
         width: 100%;
+        height: 150px;
+    }
+
+    .hebergements-cards img {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .hebergements-cards .card-title {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .hebergements-cards .card-subtitle {
+        font-size: 13px;
+        margin: 5px;
     }
 
     .populaires {
         width: 100%;
         margin-top: 0px;
+        border-radius: 0px !important;
     }
 
     .populaires-cards {
@@ -588,6 +625,9 @@ h1 {
         width: 100%;
         margin-top : 40px;
         margin-bottom: 40px;
+        margin-left: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     
     .activites-cards {
@@ -597,9 +637,10 @@ h1 {
     .activites-cards .card {
         margin-top: 33px;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: 200px;
         padding: 0px;
+        margin-top: 20px;
     }
     
     .activites-cards img {
